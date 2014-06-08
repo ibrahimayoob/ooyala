@@ -65,34 +65,34 @@ OO.ready(function() {
         console.log("EVENT: "+eventName);
       });
       
-      player.mb.subscribe("error", "test-plugin", function(eventName, payload) {
+      player.mb.subscribe("error", "myPage", function(eventName, payload) {
         console.log(eventName+": "+payload);
       });    
     
-      player.mb.subscribe(OO.EVENTS.PLAYER_CREATED, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.PLAYER_CREATED, 'myPage', function() 
       { $("#of_eventlog").append("PLAYER_CREATED\n"); });
       
       /*
-      player.mb.subscribe(OO.EVENTS.PLAYBACK_READY, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.PLAYBACK_READY, 'myPage', function() 
       { $("#of_eventlog").append("PLAYBACK_READY\n"); alert("event_playbackready - title:"+player.getTitle()); });
       */
       
-      player.mb.subscribe(OO.EVENTS.BUFFERING, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.BUFFERING, 'myPage', function() 
       { $("#of_eventlog").append("BUFFERING\n"); scrollEventLog(); });
       
-      player.mb.subscribe(OO.EVENTS.BUFFERED, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.BUFFERED, 'myPage', function() 
       { $("#of_eventlog").append("BUFFERED\n"); scrollEventLog(); });
       
-      player.mb.subscribe(OO.EVENTS.PLAYING, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.PLAYING, 'myPage', function() 
       { $("#of_eventlog").append("PLAYING\n"); scrollEventLog(); });     
                                                         
-      player.mb.subscribe(OO.EVENTS.PAUSED, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.PAUSED, 'myPage', function() 
       { $("#of_eventlog").append("PAUSED\n"); scrollEventLog(); }); 
       
-      player.mb.subscribe(OO.EVENTS.VOLUME_CHANGED, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.VOLUME_CHANGED, 'myPage', function() 
       { $("#of_eventlog").append("VOLUME_CHANGED\n"); scrollEventLog(); });
       
-      player.mb.subscribe(OO.EVENTS.VOLUME_CHANGED, 'keynote', function() 
+      player.mb.subscribe(OO.EVENTS.VOLUME_CHANGED, 'myPage', function() 
       { $("#of_eventlog").append("VOLUME_CHANGED\n"); scrollEventLog(); });
       
       player.mb.subscribe('bitrateInfoAvailable', 'myPage', function(eventName) {

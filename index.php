@@ -159,25 +159,22 @@ function scrollEventLog () {
   function success_get_videoname_response (data) {        
     console.log("AJAX get_videoname response:" + data);
     $("#of2_get_videoname").val(data);
-    
-    //console.log("going to parse json");
-    //response = JSON.parse(data);    
-    //response = $.parseJSON(data);
-    //console.log(reponse[0].name);    
-    //console.log(response);
   }
   
   function success_set_videoname_response (data) {        
     console.log("AJAX set_videoname response:" + data);
+    alert("New video title has been set!")
     
   }
   
   function error_get_videoname_response (jqXHR, textStatus, errorThrown) {
     console.log("AJAX get_videoname: error while getting response");
+    alert("Unknown error while retrieving video title");
   }
   
   function error_set_videoname_response (jqXHR, textStatus, errorThrown) {
     console.log("AJAX set_videoname: error while getting response");
+    alert("Unknown error while setting video title");
   }  
   
   

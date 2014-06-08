@@ -11,8 +11,7 @@
     exit();
   }
   
-  
-  
+  // dirty - keys should not be exposed  
   $api = new OoyalaApi("ZzcTMyOuDOdGDu3v1-rBTsPtL2wW.LN1Ce", "t8Vq02Y6XuTHDIo68GXB0TfR7NlPo9XBKB0PfJ7k");
   
   $parameters = array("name" => $title);

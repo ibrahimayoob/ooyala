@@ -256,7 +256,7 @@ function scrollEventLog () {
 
         <div class="pure-control-group">
             <label for="foo">Subscribed Event Logs</label>
-            <textarea id="of_eventlog" name="of_output" cols="45" rows="10" tabindex="2"></textarea>
+            <textarea id="of_eventlog" name="of_output" rows="10" tabindex="2"></textarea>
         </div>
             
         

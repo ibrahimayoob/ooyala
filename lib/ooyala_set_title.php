@@ -18,8 +18,6 @@
   $results = $api->patch("assets/5meW03bjoqTol7A177tuKqZtvw7Sr5EB", $parameters);
   $asset = get_object_vars($results); 
   
-  
-  echo "Dump video details: \n\n";                
         print_r("$asset \n\n");        
         var_dump($results);  
 

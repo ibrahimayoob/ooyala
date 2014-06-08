@@ -274,17 +274,16 @@ function scrollEventLog () {
                        
                                            
         <p></p>
-        
-        
-        <div class="pure-control-group">            
-            <label for="field21">Get Video Name</label>
-            <input id="of2_get_videoname" type="text" placeholder="Video Name">&nbsp;<button id="button_o2_get_videoname" class="pure-button"><i class="fa fa-refresh"></i> Get video name</button>
-        </div>
-               
+             
         <div class="pure-control-group">            
             <label for="field22">Set Video Name</label>
             <input id="of2_set_videoname" type="text" placeholder="Video Name">&nbsp;<button id="button_o2_set_videoname" class="pure-button"><i class="fa fa-pencil-square"></i> Set video name</button>  
         </div>
+        
+        <div class="pure-control-group">            
+            <label for="field21">Get Video Name</label>
+            <input id="of2_get_videoname" type="text" placeholder="Video Name">&nbsp;<button id="button_o2_get_videoname" class="pure-button"><i class="fa fa-refresh"></i> Get video name</button>
+        </div>        
         
     </fieldset>
 </form>

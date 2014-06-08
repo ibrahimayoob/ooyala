@@ -50,9 +50,27 @@
                   </header>                                                                
                         
                         <script src='//player.ooyala.com/v3/b8636d8161f242fc8e5edc17f8852da4'></script>
-                        <div id='ooyalaplayer' style='width:300px;height:168px'></div>
+                        <div id='ooyalaplayercheck'></div>
+                        <!--<div id='ooyalaplayer' style='width:300px;height:168px'></div>-->
 <script>
 
+    player = document.getElementById('ooyalaplayercheck');
+    
+    
+    var divWidth = (typeof player.getBoundingClientRect === 'function') ?
+    player.getBoundingClientRect().width : player.offsetWidth;
+    
+    if ( divWidth >= 1280 )     playerhw = [1280,720];
+    else if (divWidth >= 1024 ) playerhw = [1024,576];      
+    else if (divWidth >= 768  ) playerhw = [768,432];
+    else if (divWidth >= 568  ) playerhw = [568,319];
+    else if (divWidth >= 320  ) playerhw = [320,180];
+    else if (divWidth >= 250  ) playerhw = [250,140];    
+    else  playerhw = [120,67]; 
+
+    document.write("<div id='ooyalaplayer' style='width:" + playerhw[0] + "px;height:" + playerhw[1] + "px'></div>")
+
+  // player api
   var oplayer = null;
 
 //OO.ready(function() { OO.Player.create('ooyalaplayer', '1vbGs3bjpYwNSy0Tlib2O0PrUR3JQLKZ'); });

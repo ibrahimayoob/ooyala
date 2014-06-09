@@ -317,7 +317,7 @@ function scrollEventLog () {
 </form>
               <ul>
               <li><p>Additional logs can be found under console.log</p></li>
-              <li><p>After changing video title with [Set video name], it takes a while for [Get video name] to retrieve the latest update title.</p></li>                        
+              <li><p>After changing video title with [Set video name], it takes a while for [Get video name] to retrieve the latest title.</p></li>                        
               <li><p>Note: IE is only used to download a better browser! ;)</p></li>
               </ul>                    
                     

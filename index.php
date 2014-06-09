@@ -52,6 +52,7 @@
                         <!--<div id='ooyalaplayer' style='width:300px;height:168px'></div>-->
 <script>
 
+    // responsive video embed
     player = document.getElementById('ooyalaplayercheck');
     
     
@@ -71,8 +72,8 @@
   // player api
   var oplayer = null;
 
-//OO.ready(function() { OO.Player.create('ooyalaplayer', '1vbGs3bjpYwNSy0Tlib2O0PrUR3JQLKZ'); });
-OO.ready(function() { 
+  //OO.ready(function() { OO.Player.create('ooyalaplayer', '1vbGs3bjpYwNSy0Tlib2O0PrUR3JQLKZ'); });
+  OO.ready(function() { 
 
     oplayer = OO.Player.create('ooyalaplayer', '5meW03bjoqTol7A177tuKqZtvw7Sr5EB', {      
       onCreate: function(player) {    

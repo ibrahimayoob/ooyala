@@ -91,6 +91,7 @@
     
       player.mb.subscribe('*','myPage', function(eventName) {
         console.log("EVENT: "+eventName);
+        //$("#of_eventlog").append("EVENT: "+eventName +"\n"); scrollEventLog();
       });
       
       player.mb.subscribe("error", "myPage", function(eventName, payload) {
@@ -114,14 +115,15 @@
       player.mb.subscribe(OO.EVENTS.PLAYING, 'myPage', function() 
       { $("#of_eventlog").append("PLAYING\n"); scrollEventLog(); });     
                                                         
+      player.mb.subscribe(OO.EVENTS.PAUSE, 'myPage', function() 
+      { $("#of_eventlog").append("PAUSE\n"); scrollEventLog(); });
+
       player.mb.subscribe(OO.EVENTS.PAUSED, 'myPage', function() 
       { $("#of_eventlog").append("PAUSED\n"); scrollEventLog(); }); 
       
       player.mb.subscribe(OO.EVENTS.VOLUME_CHANGED, 'myPage', function() 
-      { $("#of_eventlog").append("VOLUME_CHANGED\n"); scrollEventLog(); });
-      
-      player.mb.subscribe(OO.EVENTS.VOLUME_CHANGED, 'myPage', function() 
-      { $("#of_eventlog").append("VOLUME_CHANGED\n"); scrollEventLog(); });
+      { $("#of_eventlog").append("VOLUME_CHANGED\n"); scrollEventLog(); });      
+
       
       player.mb.subscribe('bitrateInfoAvailable', 'myPage', function(eventName) {
         var rates = player.getBitratesAvailable();

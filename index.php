@@ -8,10 +8,8 @@
     <title>Ooyala Code Challenge</title>
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--[if lte IE 8]> <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css"> <![endif]-->
-    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css"> <!--<![endif]-->
-    <!--[if lte IE 8]> <link rel="stylesheet" href="style-old-ie.css"> <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
+    <!--[if gt IE 8]><!--> <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css"> <!--<![endif]-->    
     <!--[if gt IE 8]><!--> <link rel="stylesheet" href="css/style.css"> <!--<![endif]-->
 
 </head>
@@ -305,9 +303,11 @@ function scrollEventLog () {
         
     </fieldset>
 </form>
-              <p>Additional logs can be found under console.log</p>
-              <p>After changing video title with [Set video name], it takes a while for [Get video name] to retrieve the latest update title.</p>                        
-                    
+              <ul>
+              <li><p>Additional logs can be found under console.log</p></li>
+              <li><p>After changing video title with [Set video name], it takes a while for [Get video name] to retrieve the latest update title.</p></li>                        
+              <li><p>Note: IE is only used to download a better browser! ;)</p></li>
+              </ul>                    
                     
                 </section>
             </div>

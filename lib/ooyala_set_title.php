@@ -18,8 +18,8 @@
   $results = $api->patch("assets/5meW03bjoqTol7A177tuKqZtvw7Sr5EB", $parameters);
   $asset = get_object_vars($results); 
   
-        print_r("$asset \n\n");        
-        var_dump($results);  
+  print_r("$asset \n\n");        
+  var_dump($results);  
 
   echo (json_encode($results));
 

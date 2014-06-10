@@ -3,6 +3,9 @@
   require_once 'sdk/OoyalaApi.php';
 
   header('Content-type: text/plain');
+  
+  //security - anyone can modify title once they know the url to this script
+  //todo     - only allow authorised requests
 
   $title = $_GET['videotitle'];
   if($title === "" || $title === false || $title === null || empty($title)) 
